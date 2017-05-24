@@ -1,0 +1,17 @@
+/* CSS Document */
+.circulo .link li a { 
+height:#FDFDFD;
+	border-radius:25px;
+	background-color: #D536C1;
+	width:300 px;
+	padding:10px;}
+	
+	.circulo .link li a{
+		margin:0 auto;
+		}
+	.circulo .link li a{
+		margin-right:auto;
+	}
+	.circulo .link li a{
+		margin-left:auto;
+	}

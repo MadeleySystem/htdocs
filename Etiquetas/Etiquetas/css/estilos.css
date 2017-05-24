@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+#wrap{
+	background:#1CE5DC;
+	width: 30em;
+	margin: 0 auto;/*sirve para dejarle un margen del mismo ancho de cada lado*/
+	padding:2em;/*margen interno*/
+	}
+	#wrap div{
+		max-width: 10em;
+		background: rgba(28,229,220,0.7); /*fondo de pantalla*/
+		box-shadow:#333 5px 5px 5px 5px;
+		margin:1em;/*margen de afuera*/
+		display:block;
+		max-height:10em;
+		}
+		#wrap div.primero img{
+			width:100%;
+		}
