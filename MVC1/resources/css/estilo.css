@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{
+	width: 800px;
+	margin: 0 auto;
+}
+pre {
+    display: inline-block;
+    font: "Consolas","Lucida Console","Courier New",monospace;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.codigo{border:#ccc solid 1px;background:#ffffe6;clear:both;margin:2px 0 20px;overflow:auto;padding:10px;width:570px}
