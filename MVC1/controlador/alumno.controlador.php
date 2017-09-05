@@ -72,7 +72,16 @@ class alumnocontrolador {
 		}
 		
 	}
-	function eliminar(){
+	function eliminar($id){
+		$obj=$this->objeto->buscar($this->id);
+		if($obj){
+			$this->objeto->eliminar($this->id);
+			echo 1; //Si encontro el ID
+			
+		} else {
+			echo "error: usuario no localizado";
+		}
+		
 		
 	}
 	
@@ -86,7 +95,7 @@ class alumnocontrolador {
 				$this->carreras= $tempC->listar();
 				
 			}else{
-				$this->error="No se pudo localizar las careras";
+				$this->error="No se pudo localizar las carreras";
 			}
 			
 		}

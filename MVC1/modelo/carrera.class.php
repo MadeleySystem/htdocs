@@ -1,5 +1,5 @@
 <?php
-
+include_once('database.class.php');
 
 class carrera extends database{
 	public $clave;
@@ -38,7 +38,8 @@ class carrera extends database{
 		try{
 			$sql="delete from carrera where  clave=?";
 			$stmt=$this->con->prepare($sql);
-			$stmt->execute(array($id));	
+			$stmt->execute(array($id));
+				
 			
 		}	catch(PDOException $e){
 			$this->error=$e->getMessage();

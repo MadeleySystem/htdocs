@@ -1,5 +1,5 @@
 <div class="container">
- <form class="form-horizontal" action="<?php echo BASE_URL;?>">
+ <form class="form-horizontal" action="<?php echo BASE_URL;?>alumno/Guardar" method="post" enctype="multipart/form-data">
   <fieldset>
     <legend>Legend</legend>
     <div class="form-group">
@@ -64,9 +64,12 @@
 			} else {
 				echo "<option value=''  >Seleccione una carrera</option>";
 			}
+			echo  "/n/r";
 			$carr=$this->carreras;
 			foreach($carr as $c)	{
-				echo "<option value='".$c->clave."' >".$c->nombre."</option>";
+				echo "<option value='".$c->clave."' ".(($obj->carrera==$c->clave)?'selected=selected':'').">".$c->nombre."</option>";
+				
+				echo  "/n/r";
 				
 			}
 			
